@@ -2,23 +2,29 @@
   <div id="app">
     <Navbar/>
     <Canvas/>
+    <Stack/>
   </div>
 </template>
 
 <script>
 import Canvas from "@/components/v-canvas";
 import Navbar from "@/components/v-navbar";
+import Stack from "@/components/v-stack";
 
 export default {
   name: 'App',
   components: {
     Navbar,
-    Canvas
+    Canvas,
+    Stack,
   }
 }
 </script>
 
 <style>
+body{
+  font-family: 'Montserrat', sans-serif;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -1,21 +1,28 @@
 <template>
+  <nav>
       <div class="center">
         <vs-button border
-            :active="active == 0"
-            @click="active = 0">
-          Stack
+             :active="active == 1"
+             @click="active = 1">
+          About me
         </vs-button>
         <vs-button border
-            :active="active == 1"
-            @click="active = 1">
+            :active="active == 2"
+            @click="active = 2">
+          Skills
+        </vs-button>
+        <vs-button border
+            :active="active == 3"
+            @click="active = 3">
           Achievements
         </vs-button>
         <vs-button border
-           :active="active == 2"
-           @click="active = 2">
+           :active="active == 4"
+           @click="active = 4">
           Contacts
         </vs-button>
       </div>
+  </nav>
 </template>
 
 <script>

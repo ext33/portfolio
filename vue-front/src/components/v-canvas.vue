@@ -5,25 +5,25 @@
               <kinesis-container style="width: 100%; height: 100% !important; padding: 90px 0;">
 
                 <kinesis-container tag="h1" style="">
-                  <kinesis-element :strength="12" style="display: inline-block; padding: 5px">
+                  <kinesis-element :strength="11" style="display: inline-block; padding: 5px" axis="x" type="rotate">
                     e
                   </kinesis-element>
-                  <kinesis-element :strength="12" style="display: inline-block; padding: 5px">
+                  <kinesis-element :strength="12" style="display: inline-block; padding: 5px" axis="x" type="rotate">
                     x
                   </kinesis-element>
-                  <kinesis-element :strength="12" style="display: inline-block; padding: 5px">
+                  <kinesis-element :strength="11" style="display: inline-block; padding: 5px" axis="x" type="rotate">
                     t
                   </kinesis-element>
-                  <kinesis-element :strength="12" style="display: inline-block; padding: 5px">
+                  <kinesis-element :strength="12" style="display: inline-block; padding: 5px" axis="x" type="rotate">
                     3
                   </kinesis-element>
-                  <kinesis-element :strength="12" style="display: inline-block; padding: 5px">
+                  <kinesis-element :strength="11" style="display: inline-block; padding: 5px" axis="x" type="rotate">
                     3
                   </kinesis-element>
                 </kinesis-container>
 
                 <kinesis-container tag="h4">
-                  <kinesis-element :strength="10" style="padding: 5px">
+                  <kinesis-element :strength="12" style="padding: 5px">
                     ~/python ~/javascript
                   </kinesis-element>
                   <kinesis-element :strength="11" style="padding: 5px">
