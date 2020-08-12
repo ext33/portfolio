@@ -4,32 +4,32 @@
             <kinesis-element>
               <kinesis-container style="width: 100%; height: 100% !important; padding: 90px 0;">
 
-                <kinesis-container tag="h1" style="">
-                  <kinesis-element :strength="11" style="display: inline-block; padding: 5px" axis="x" type="rotate">
+                <kinesis-container tag="h1" style="height: auto">
+                  <kinesis-element style="display: inline-block; padding: 5px" axis="x" type="rotate">
                     e
                   </kinesis-element>
-                  <kinesis-element :strength="12" style="display: inline-block; padding: 5px" axis="x" type="rotate">
+                  <kinesis-element style="display: inline-block; padding: 5px" axis="x" type="rotate">
                     x
                   </kinesis-element>
-                  <kinesis-element :strength="11" style="display: inline-block; padding: 5px" axis="x" type="rotate">
+                  <kinesis-element style="display: inline-block; padding: 5px" axis="x" type="rotate">
                     t
                   </kinesis-element>
-                  <kinesis-element :strength="12" style="display: inline-block; padding: 5px" axis="x" type="rotate">
+                  <kinesis-element style="display: inline-block; padding: 5px" axis="x" type="rotate">
                     3
                   </kinesis-element>
-                  <kinesis-element :strength="11" style="display: inline-block; padding: 5px" axis="x" type="rotate">
+                  <kinesis-element style="display: inline-block; padding: 5px" axis="x" type="rotate">
                     3
                   </kinesis-element>
                 </kinesis-container>
 
-                <kinesis-container tag="h4">
-                  <kinesis-element :strength="12" style="padding: 5px">
+                <kinesis-container tag="h4" style="height: auto">
+                  <kinesis-element :strength="1" style="padding: 5px">
                     ~/python ~/javascript
                   </kinesis-element>
-                  <kinesis-element :strength="11" style="padding: 5px">
+                  <kinesis-element :strength="1" style="padding: 5px">
                     web developer
                   </kinesis-element>
-                  <kinesis-element :strength="10" style="padding: 5px">
+                  <kinesis-element :strength="1" style="padding: 5px">
                     <a href="https://github.com/ext33" target="_blank"><img src="@/assets/github-logo.svg" id="gitLogo"></a>
                   </kinesis-element>
                 </kinesis-container>
@@ -60,21 +60,22 @@ name: "Canvas"
 </script>
 
 <style scoped>
+@media (max-height: 812px){
+  #container{
+    margin-top: -10% !important;
+  }
+}
 #container{
-  margin: 0;
-  padding: 0;
-  bottom: 0;
-  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100% !important;
-}
-h1{
-  font-size: 42px;
+  font-size: 20px;
+  margin-top: 40px;
 }
 #gitLogo{
+  margin-top: 10px;
   width: 30px;
   height: 30px;
 }

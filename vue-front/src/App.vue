@@ -1,22 +1,23 @@
 <template>
   <div id="app">
-    <Navbar/>
     <Canvas/>
     <Stack/>
+    <Contacts/>
   </div>
 </template>
 
 <script>
 import Canvas from "@/components/v-canvas";
-import Navbar from "@/components/v-navbar";
+// import Navbar from "@/components/v-navbar";
 import Stack from "@/components/v-stack";
+import Contacts from "@/components/v-contacts";
 
 export default {
   name: 'App',
   components: {
-    Navbar,
     Canvas,
     Stack,
+    Contacts,
   }
 }
 </script>
@@ -24,6 +25,8 @@ export default {
 <style>
 body{
   font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -31,7 +34,6 @@ body{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
   padding: 0;
   bottom: 0;
   top: 0;

@@ -1,163 +1,123 @@
 <template>
   <div id="stack">
     <div class="center">
-      <h2>
+      <h1>
         Skills
-      </h2>
+      </h1>
       <div id="cards">
+        <div class="l-wrap">
+          <div class="three-col-grid">
+            <div class="grid-item">
+              <div class="direction">
+              <h2>Frontend</h2>
+              <div class="fill">
 
-        <div class="direction">
-          <h3>Frontend</h3>
-          <div class="fill">
+                <div class="dialog">
+                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                    <img src="@/assets/js-logo.svg" class="dialogLogo">
+                  </vs-button>
+                </div>
 
-            <div class="dialog">
-              <vs-button shadow icon @click="active=!active" class="dialogButton">
-                <img src="@/assets/js-logo.svg" class="dialogLogo">
-              </vs-button>
-              <vs-dialog v-model="active">
+                <div class="dialog">
+                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                    <img src="@/assets/html5-logo.svg" class="dialogLogo">
+                  </vs-button>
+                </div>
 
-              </vs-dialog>
-            </div>
+                <div class="dialog">
+                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                    <img src="@/assets/css3-logo.svg" class="dialogLogo">
+                  </vs-button>
+                </div>
 
-            <div class="dialog">
-              <vs-button shadow icon @click="active=!active" class="dialogButton">
-                <img src="@/assets/html5-logo.svg" class="dialogLogo">
-              </vs-button>
-              <vs-dialog v-model="active">
+                <div class="dialog">
+                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                    <img src="@/assets/react-logo.svg" class="dialogLogo">
+                  </vs-button>
+                </div>
 
-              </vs-dialog>
-            </div>
+                <div class="dialog">
+                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                    <img src="@/assets/vue-logo.svg" class="dialogLogo">
+                  </vs-button>
+                </div>
 
-            <div class="dialog">
-              <vs-button shadow icon @click="active=!active" class="dialogButton">
-                <img src="@/assets/css3-logo.svg" class="dialogLogo">
-              </vs-button>
-              <vs-dialog v-model="active">
+              </div>
+            </div></div>
+            <div class="grid-item"><div class="direction">
+              <h2>Backend</h2>
+              <div class="fill">
 
-              </vs-dialog>
-            </div>
+                <div class="dialog">
+                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                    <img src="@/assets/python-logo.svg" class="dialogLogo">
+                  </vs-button>
+                </div>
 
-            <div class="dialog">
-              <vs-button shadow icon @click="active=!active" class="dialogButton">
-                <img src="@/assets/react-logo.svg" class="dialogLogo">
-              </vs-button>
-              <vs-dialog v-model="active">
+                <div class="dialog">
+                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                    <img src="@/assets/docker-logo.svg" class="dialogLogo">
+                  </vs-button>
+                </div>
 
-              </vs-dialog>
-            </div>
+                <div class="dialog">
+                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                    <img src="@/assets/nginx-logo.png" class="dialogLogo">
+                  </vs-button>
+                </div>
 
-            <div class="dialog">
-              <vs-button shadow icon @click="active=!active" class="dialogButton">
-                <img src="@/assets/vue-logo.svg" class="dialogLogo">
-              </vs-button>
-              <vs-dialog v-model="active">
+                <div class="dialog">
+                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                    <img src="@/assets/postgresql-logo.svg" class="dialogLogo">
+                  </vs-button>
+                </div>
 
-              </vs-dialog>
-            </div>
+                <div class="dialog">
+                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                    <img src="@/assets/sqlite-logo.svg" class="dialogLogo">
+                  </vs-button>
+                </div>
 
-          </div>
-        </div>
+              </div>
+            </div></div>
+            <div class="grid-item"><div class="direction">
+              <h2>Tools</h2>
+              <div class="fill">
 
-        <div class="direction">
-          <h3>Backend</h3>
-          <div class="fill">
+                <div class="dialog">
+                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                    <img src="@/assets/pycharm-logo.svg" class="dialogLogo">
+                  </vs-button>
+                </div>
 
-            <div class="dialog">
-              <vs-button shadow icon @click="active=!active" class="dialogButton">
-                <img src="@/assets/python-logo.svg" class="dialogLogo">
-              </vs-button>
-              <vs-dialog v-model="active">
+                <div class="dialog">
+                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                    <img src="@/assets/webstorm-logo.svg" class="dialogLogo">
+                  </vs-button>
+                </div>
 
-              </vs-dialog>
-            </div>
+                <div class="dialog">
+                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                    <img src="@/assets/vs-logo.png" class="dialogLogo">
+                  </vs-button>
+                </div>
 
-            <div class="dialog">
-              <vs-button shadow icon @click="active=!active" class="dialogButton">
-                <img src="@/assets/docker-logo.svg" class="dialogLogo">
-              </vs-button>
-              <vs-dialog v-model="active">
+                <div class="dialog">
+                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                    <img src="@/assets/vim-logo.svg" class="dialogLogo">
+                  </vs-button>
+                </div>
 
-              </vs-dialog>
-            </div>
-
-            <div class="dialog">
-              <vs-button shadow icon @click="active=!active" class="dialogButton">
-                <img src="@/assets/nginx-logo.png" class="dialogLogo">
-              </vs-button>
-              <vs-dialog v-model="active">
-
-              </vs-dialog>
-            </div>
-
-            <div class="dialog">
-              <vs-button shadow icon @click="active=!active" class="dialogButton">
-                <img src="@/assets/postgresql-logo.svg" class="dialogLogo">
-              </vs-button>
-              <vs-dialog v-model="active">
-
-              </vs-dialog>
-            </div>
-
-            <div class="dialog">
-              <vs-button shadow icon @click="active=!active" class="dialogButton">
-                <img src="@/assets/sqlite-logo.svg" class="dialogLogo">
-              </vs-button>
-              <vs-dialog v-model="active">
-
-              </vs-dialog>
-            </div>
-
-
-
-          </div>
-        </div>
-
-        <div class="direction">
-          <h3>Tools</h3>
-          <div class="fill">
-
-            <div class="dialog">
-              <vs-button shadow icon @click="active=!active" class="dialogButton">
-                <img src="@/assets/pycharm-logo.svg" class="dialogLogo">
-              </vs-button>
-              <vs-dialog v-model="active">
-
-              </vs-dialog>
-            </div>
-
-            <div class="dialog">
-              <vs-button shadow icon @click="active=!active" class="dialogButton">
-                <img src="@/assets/webstorm-logo.svg" class="dialogLogo">
-              </vs-button>
-              <vs-dialog v-model="active">
-
-              </vs-dialog>
-            </div>
-
-            <div class="dialog">
-              <vs-button shadow icon @click="active=!active" class="dialogButton">
-                <img src="@/assets/vs-logo.png" class="dialogLogo">
-              </vs-button>
-              <vs-dialog v-model="active">
-
-              </vs-dialog>
-            </div>
-
-            <div class="dialog">
-              <vs-button shadow icon @click="active=!active" class="dialogButton">
-                <img src="@/assets/vim-logo.svg" class="dialogLogo">
-              </vs-button>
-              <vs-dialog v-model="active">
-
-              </vs-dialog>
-            </div>
-
+              </div>
+            </div></div>
           </div>
         </div>
 
       </div>
     </div>
+
   </div>
+
 </template>
 
 <script>
@@ -174,7 +134,9 @@ export default {
 
 <style scoped>
 #stack{
-  padding-top: 6%;
+  margin: 5% 0;
+  padding-top: 12%;
+  /*background-image: -webkit-linear-gradient(275deg, #fff 19%, #DCDCDC	19%);*/
 }
 #cards{
   padding-top: 1%;
@@ -184,18 +146,12 @@ export default {
   align-items: center;
 }
 .direction{
-  border: 1px solid gray;
-  margin: 2%;
   padding: 10px;
   border-radius: 20px;
-
-}
-.direction:hover{
-
 }
 .fill{
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -207,7 +163,16 @@ export default {
   background: none;
 }
 .dialogLogo{
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
+}
+.l-wrap {
+  display: grid;
+  grid-gap: 3vw;
+}
+.grid-item {
+  padding: .5em;
+  text-align: center;
+  margin: 3% 0;
 }
 </style>
