@@ -135,7 +135,7 @@ export default {
 <style scoped>
 #stack{
   margin: 6% 0;
-  padding-top: 8%;
+  padding-top: 6%;
   /*background-image: -webkit-linear-gradient(275deg, #fff 19%, #DCDCDC	19%);*/
 }
 #cards{

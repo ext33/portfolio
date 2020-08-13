@@ -106,6 +106,7 @@ name: "Contacts",
   justify-content: center;
   align-items: center;
   padding-top: 20px;
+  flex-wrap: wrap;
 }
 .contactsLogo{
   width: 70px;
