@@ -1,15 +1,13 @@
 <template>
   <div id="stack">
     <div class="center">
-      <h1>
-        Skills
-      </h1>
+      <h1 v-text="$ml.get('skillTitle')"></h1>
       <div id="cards">
         <div class="l-wrap">
           <div class="three-col-grid">
             <div class="grid-item">
               <div class="direction">
-              <h2>Frontend</h2>
+              <h2 v-text="$ml.get('frontTitle')"></h2>
               <div class="fill">
 
                 <div class="logo1">
@@ -45,7 +43,7 @@
               </div>
             </div></div>
             <div class="grid-item"><div class="direction">
-              <h2>Backend</h2>
+              <h2 v-text="$ml.get('backTitle')"></h2>
               <div class="fill">
 
                 <div class="logo1">
@@ -81,7 +79,7 @@
               </div>
             </div></div>
             <div class="grid-item"><div class="direction">
-              <h2>Tools</h2>
+              <h2 v-text="$ml.get('toolTitle')"></h2>
               <div class="fill">
 
                 <div class="logo1">

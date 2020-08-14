@@ -47,7 +47,9 @@ body{
 }
 .topButton{
   border: none !important;
-  background-color: #6C6C6C !important;
+  background-color: black !important;
   outline: none 0px;
+  width: 50px !important;
+  height: 50px !important;
 }
 </style>

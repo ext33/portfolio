@@ -1,14 +1,12 @@
 <template>
   <div id="Contacts">
-    <h1>
-      Contacts
-    </h1>
+    <h1 v-text="$ml.get('contactsTitle')"></h1>
     <div class="cont">
       <div class="logo1">
         <vs-button shadow icon @click="active=!active" class="logoBtn">
           <img src="@/assets/contacts/email.svg" class="contactsLogo">
         </vs-button>
-        <vs-dialog not-close v-model="active">
+        <vs-dialog v-model="active">
           <template>
             <div class="modalContent">
               <div class="modalLogo">
@@ -16,7 +14,7 @@
               </div>
               <div class="modalDesc">
                 <p class="modalText">
-                  You may contact me with email: <br><b><a class="modalLink" href="mailto:redwoodx3@gmail.com" target="_blank">redwoodx3@gmail.com</a></b>
+                  <span v-text="$ml.get('emailDesc')"></span>:<br><b><a class="modalLink" href="mailto:redwoodx3@gmail.com" target="_blank">redwoodx3@gmail.com</a></b>
                 </p>
               </div>
             </div>
@@ -27,7 +25,7 @@
         <vs-button shadow icon @click="active2=!active2" class="logoBtn">
           <img src="@/assets/contacts/telegram.svg" class="contactsLogo">
         </vs-button>
-        <vs-dialog not-close v-model="active2">
+        <vs-dialog v-model="active2">
           <template>
             <div class="modalContent">
               <div class="modalLogo">
@@ -35,7 +33,7 @@
               </div>
               <div class="modalDesc">
                 <p class="modalText">
-                  Also you may contact me with telegram: <br><b><a class="modalLink" href="https://t.me/xdxd3xd" target="_blank">@xdxd3xd</a></b>
+                  <span v-text="$ml.get('telegramDesc')"></span>:<br><b><a class="modalLink" href="https://t.me/xdxd3xd" target="_blank">@xdxd3xd</a></b>
                 </p>
               </div>
             </div>
@@ -46,7 +44,7 @@
         <vs-button shadow icon @click="active3=!active3" class="logoBtn">
           <img src="@/assets/contacts/instagram.svg" class="contactsLogo">
         </vs-button>
-        <vs-dialog not-close v-model="active3">
+        <vs-dialog v-model="active3">
           <template>
             <div class="modalContent">
               <div class="modalLogo">
@@ -54,7 +52,7 @@
               </div>
               <div class="modalDesc">
                 <p class="modalText">
-                  If you interested, my instagram: <br><b><a class="modalLink" href="https://www.instagram.com/ext33_/" target="_blank">ext33</a></b>
+                  <span v-text="$ml.get('instDesc')"></span>:<br><b><a class="modalLink" href="https://www.instagram.com/ext33_/" target="_blank">ext33</a></b>
                 </p>
               </div>
             </div>
@@ -65,7 +63,7 @@
         <vs-button shadow icon @click="active4=!active4" class="logoBtn">
           <img src="@/assets/github-logo.svg" class="contactsLogo">
         </vs-button>
-        <vs-dialog not-close v-model="active4">
+        <vs-dialog v-model="active4">
           <template>
             <div class="modalContent">
               <div class="modalLogo">
@@ -73,7 +71,26 @@
               </div>
               <div class="modalDesc">
                 <p class="modalText">
-                  All my projects on github: <br><b><a class="modalLink" href="https://github.com/ext33" target="_blank">ext33</a></b>
+                  <span v-text="$ml.get('gitDesc')"></span>:<br><b><a class="modalLink" href="https://github.com/ext33" target="_blank">ext33</a></b>
+                </p>
+              </div>
+            </div>
+          </template>
+        </vs-dialog>
+      </div>
+      <div class="logo1">
+        <vs-button shadow icon @click="active5=!active5" class="logoBtn">
+          <img src="@/assets/contacts/habr.png" class="contactsLogo">
+        </vs-button>
+        <vs-dialog v-model="active5">
+          <template>
+            <div class="modalContent">
+              <div class="modalLogo">
+                <img src="@/assets/contacts/habr.png" class="contactsLogo">
+              </div>
+              <div class="modalDesc">
+                <p class="modalText">
+                  <span v-text="$ml.get('habrDesc')"></span>:<br><b><a class="modalLink" href="https://career.habr.com/ext3" target="_blank">ext33</a></b>
                 </p>
               </div>
             </div>
@@ -92,6 +109,7 @@ name: "Contacts",
     active2: false,
     active3: false,
     active4: false,
+    active5: false,
   })
 }
 </script>

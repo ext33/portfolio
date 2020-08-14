@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import './ml'
 import App from './App.vue'
 import { KinesisContainer, KinesisElement} from 'vue-kinesis'
 import Vuesax from 'vuesax'

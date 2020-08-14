@@ -4,7 +4,7 @@
       <kinesis-element>
         <kinesis-container style="padding: 90px 0;">
 
-          <kinesis-container tag="h1" style="height: auto">
+          <kinesis-container tag="h1" style="height: auto; width: 100%">
             <kinesis-element style="display: inline-block; padding: 5px" axis="x" type="rotate">
               e
             </kinesis-element>
@@ -26,8 +26,8 @@
             <kinesis-element :strength="1" style="padding: 5px">
               ~/python ~/javascript
             </kinesis-element>
-            <kinesis-element :strength="1" style="padding: 5px">
-              web developer
+            <kinesis-element :strength="1" style="padding: 5px" v-text="$ml.get('canvas')">
+
             </kinesis-element>
             <kinesis-element :strength="1" style="padding: 5px">
               <a href="https://github.com/ext33" target="_blank"><img src="@/assets/github-logo.svg" id="gitLogo"></a>
@@ -55,7 +55,10 @@ name: "Canvas"
 <style scoped>
 @media (max-height: 812px){
   #container{
-    margin-top: -10% !important;
+    margin-top: -20% !important;
+  }
+  .vs-switch{
+    margin-left: 50% !important;
   }
 }
 #container{

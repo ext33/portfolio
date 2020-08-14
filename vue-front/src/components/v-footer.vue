@@ -1,14 +1,18 @@
 <template>
   <div id="Footer">
+
     <p class="footerText">
-      Site by <a class="footerLink" href="">ext33</a>. All rights reserved.
+      <span v-text="$ml.get('footerDesc')"></span> <a class="footerLink" href="">ext33</a>.
     </p>
   </div>
 </template>
 
 <script>
 export default {
-name: "Footer"
+name: "Footer",
+  data:() => ({
+    option1: true,
+  })
 }
 </script>
 
@@ -16,9 +20,14 @@ name: "Footer"
 #Footer{
   margin-top: 6%;
   padding-top: 4%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 1%;
 }
 .footerText{
   font-size: 18px;
+  font-weight: bold;
 }
 .footerLink{
   text-decoration: none;
