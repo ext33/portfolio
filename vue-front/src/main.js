@@ -3,7 +3,7 @@ import './ml'
 import App from './App.vue'
 import { KinesisContainer, KinesisElement} from 'vue-kinesis'
 import Vuesax from 'vuesax'
-import 'vuesax/dist/vuesax.css' //Vuesax styles
+import 'vuesax/dist/vuesax.css'
 
 Vue.use(Vuesax, {
   colors: {
