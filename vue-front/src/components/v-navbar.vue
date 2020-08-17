@@ -21,5 +21,7 @@ nav{
 }
 .navButton{
   padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
 }
 </style>
