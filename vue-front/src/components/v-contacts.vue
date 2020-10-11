@@ -137,6 +137,7 @@ name: "Contacts",
   padding: 30px;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 20px;
 }
 .modalLogo{

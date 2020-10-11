@@ -4,23 +4,7 @@
       <kinesis-element>
         <kinesis-container style="padding: 90px 0;">
 
-          <kinesis-container tag="h1" style="height: auto; width: 100%">
-            <kinesis-element style="display: inline-block; padding: 5px" axis="x" type="rotate">
-              e
-            </kinesis-element>
-            <kinesis-element style="display: inline-block; padding: 5px" axis="x" type="rotate">
-              x
-            </kinesis-element>
-            <kinesis-element style="display: inline-block; padding: 5px" axis="x" type="rotate">
-              t
-            </kinesis-element>
-            <kinesis-element style="display: inline-block; padding: 5px" axis="x" type="rotate">
-              3
-            </kinesis-element>
-            <kinesis-element style="display: inline-block; padding: 5px" axis="x" type="rotate">
-              3
-            </kinesis-element>
-          </kinesis-container>
+          <h1>e x t 3 3</h1>
 
           <kinesis-container tag="h4" style="height: auto">
             <kinesis-element :strength="1" style="padding: 5px">

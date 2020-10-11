@@ -30,12 +30,6 @@
 
                 <div class="logo1">
                   <vs-button shadow icon @click="active=!active" class="dialogButton">
-                    <img src="@/assets/react-logo.svg" class="dialogLogo">
-                  </vs-button>
-                </div>
-
-                <div class="logo1">
-                  <vs-button shadow icon @click="active=!active" class="dialogButton">
                     <img src="@/assets/vue-logo.svg" class="dialogLogo">
                   </vs-button>
                 </div>
@@ -160,6 +154,7 @@ export default {
 .dialogButton{
   border: 0;
   background: none;
+  cursor: default;
 }
 .dialogLogo{
   width: 90px;
