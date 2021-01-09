@@ -19,20 +19,16 @@
           </kinesis-container>
         </kinesis-container>
       </kinesis-element>
-
-      <!-- background-circles-props -->
-<!--      <kinesis-element>-->
-        <div class="circle circle-purple"></div>
-        <div class="circle circle-purple1"></div>
-        <div class="circle circle-purple3"></div>
-<!--      </kinesis-element>-->
+      <div class="circle circle-purple"></div>
+      <div class="circle circle-purple1"></div>
+      <div class="circle circle-purple3"></div>
     </kinesis-container>
   </div>
 </template>
 
 <script>
 export default {
-name: "Canvas"
+  name: "Canvas"
 }
 </script>
 

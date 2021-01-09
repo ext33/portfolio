@@ -2,17 +2,14 @@
   <div id="Footer">
 
     <p class="footerText">
-      <span v-text="$ml.get('footerDesc')"></span> <a class="footerLink" href="">ext33</a>.
+      <span v-text="$ml.get('footerDesc')"></span> <a class="footerLink" href="https://github.com/ext33">ext33</a>.
     </p>
   </div>
 </template>
 
 <script>
 export default {
-name: "Footer",
-  data:() => ({
-    option1: true,
-  })
+  name: "Footer",
 }
 </script>
 

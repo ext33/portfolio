@@ -6,10 +6,7 @@
 
 <script>
 export default {
-  data:() => ({
-    active: 0,
-  }),
-name: "Navbar"
+  name: "Navbar"
 }
 </script>
 

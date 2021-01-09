@@ -11,25 +11,31 @@
               <div class="fill">
 
                 <div class="logo1">
-                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                  <vs-button shadow icon class="dialogButton">
                     <img src="@/assets/js-logo.svg" class="dialogLogo">
                   </vs-button>
                 </div>
 
                 <div class="logo1">
-                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                  <vs-button shadow icon class="dialogButton">
+                    <img src="@/assets/ts-logo.svg" class="dialogLogo">
+                  </vs-button>
+                </div>
+
+                <div class="logo1">
+                  <vs-button shadow icon class="dialogButton">
                     <img src="@/assets/html5-logo.svg" class="dialogLogo">
                   </vs-button>
                 </div>
 
                 <div class="logo1">
-                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                  <vs-button shadow icon class="dialogButton">
                     <img src="@/assets/css3-logo.svg" class="dialogLogo">
                   </vs-button>
                 </div>
 
                 <div class="logo1">
-                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                  <vs-button shadow icon class="dialogButton">
                     <img src="@/assets/vue-logo.svg" class="dialogLogo">
                   </vs-button>
                 </div>
@@ -41,31 +47,31 @@
               <div class="fill">
 
                 <div class="logo1">
-                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                  <vs-button shadow icon class="dialogButton">
                     <img src="@/assets/python-logo.svg" class="dialogLogo">
                   </vs-button>
                 </div>
 
                 <div class="logo1">
-                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                  <vs-button shadow icon class="dialogButton">
                     <img src="@/assets/docker-logo.svg" class="dialogLogo">
                   </vs-button>
                 </div>
 
                 <div class="logo1">
-                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                  <vs-button shadow icon class="dialogButton">
                     <img src="@/assets/nginx-logo.png" class="dialogLogo">
                   </vs-button>
                 </div>
 
                 <div class="logo1">
-                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                  <vs-button shadow icon class="dialogButton">
                     <img src="@/assets/postgresql-logo.svg" class="dialogLogo">
                   </vs-button>
                 </div>
 
                 <div class="logo1">
-                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                  <vs-button shadow icon class="dialogButton">
                     <img src="@/assets/sqlite-logo.svg" class="dialogLogo">
                   </vs-button>
                 </div>
@@ -77,25 +83,25 @@
               <div class="fill">
 
                 <div class="logo1">
-                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                  <vs-button shadow icon class="dialogButton">
                     <img src="@/assets/pycharm-logo.svg" class="dialogLogo">
                   </vs-button>
                 </div>
 
                 <div class="logo1">
-                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                  <vs-button shadow icon class="dialogButton">
                     <img src="@/assets/webstorm-logo.svg" class="dialogLogo">
                   </vs-button>
                 </div>
 
                 <div class="logo1">
-                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                  <vs-button shadow icon class="dialogButton">
                     <img src="@/assets/vs-logo.png" class="dialogLogo">
                   </vs-button>
                 </div>
 
                 <div class="logo1">
-                  <vs-button shadow icon @click="active=!active" class="dialogButton">
+                  <vs-button shadow icon class="dialogButton">
                     <img src="@/assets/vim-logo.svg" class="dialogLogo">
                   </vs-button>
                 </div>
@@ -114,12 +120,6 @@
 
 <script>
 export default {
-  data:() => ({
-    active: false,
-    input1: '',
-    input2: '',
-    checkbox1: false
-  }),
   name: "Stack"
 }
 </script>
