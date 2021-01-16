@@ -18,12 +18,6 @@
 
                 <div class="logo1">
                   <vs-button shadow icon class="dialogButton">
-                    <img src="@/assets/ts-logo.svg" class="dialogLogo">
-                  </vs-button>
-                </div>
-
-                <div class="logo1">
-                  <vs-button shadow icon class="dialogButton">
                     <img src="@/assets/html5-logo.svg" class="dialogLogo">
                   </vs-button>
                 </div>
@@ -37,6 +31,12 @@
                 <div class="logo1">
                   <vs-button shadow icon class="dialogButton">
                     <img src="@/assets/vue-logo.svg" class="dialogLogo">
+                  </vs-button>
+                </div>
+
+                <div class="logo1">
+                  <vs-button shadow icon class="dialogButton">
+                    <img src="@/assets/react-icon.svg" class="dialogLogo">
                   </vs-button>
                 </div>
 
