@@ -8,7 +8,7 @@ export default new MLCreate({
     save: process.env.NODE_ENV === 'production',
     languages: [
         new MLanguage('en').create({
-            canvas: "web developer",
+            canvas: "developer",
             skillTitle: "Skills",
             frontTitle: "Frontend",
             backTitle: "Backend",
@@ -23,10 +23,10 @@ export default new MLCreate({
         }),
 
         new MLanguage('ru').create({
-            canvas: "веб-разработчик",
+            canvas: "разработчик",
             skillTitle: "Навыки",
-            frontTitle: "Фронт",
-            backTitle: "Бэк",
+            frontTitle: "Фронтенд",
+            backTitle: "Бэкенд",
             toolTitle: "Инструменты",
             contactsTitle: "Контакты",
             emailDesc: "Вы можете связаться со мной по почте",

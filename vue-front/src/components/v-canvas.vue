@@ -8,7 +8,7 @@
 
           <kinesis-container tag="h4" style="height: auto">
             <kinesis-element :strength="1" style="padding: 5px">
-              ~/python ~/javascript
+              ~/javascript ~/react
             </kinesis-element>
             <kinesis-element :strength="1" style="padding: 5px" v-text="$ml.get('canvas')">
 
