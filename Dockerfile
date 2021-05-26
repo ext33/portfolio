@@ -1,9 +1,9 @@
 FROM node:latest as build-stage
 WORKDIR /app
-COPY /vue-front/package*.json ./
-RUN npm install
-COPY /vue-front .
-RUN npm run build
+COPY /front/package*.json ./
+RUN yarn install
+COPY /front .
+RUN yarn run build
 
 FROM nginx as production-stage
 RUN mkdir /app
