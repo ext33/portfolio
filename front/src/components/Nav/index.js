@@ -3,8 +3,8 @@ import './Nav.sass'
 
 function Nav() {
     return (
-        <div className="flex nav_navbar">
-            
+        <div className="flex ui_navbar">
+            nav
         </div>
     )
 }
