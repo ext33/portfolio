@@ -1,3 +1,31 @@
-.ui_navbar
-    justify-content: center
+@import ../../styles/vars
+
+.nav
+    justify-content: space-between
     align-items: center
+    padding: 60px 0
+    width: 70%
+
+    &__theme-icon
+        width: 32px
+        height: 32px
+
+        svg
+            width: 32px !important
+            height: 32px !important
+
+    &__links
+        color: $black
+        font-size: 26px
+        flex-direction: row
+
+        a, div
+            margin: 0 30px
+    
+    &__lang-btn
+
+        button
+            cursor: pointer
+        
+        .focus
+            border-bottom: 1px solid $black

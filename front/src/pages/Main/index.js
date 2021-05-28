@@ -4,9 +4,11 @@ import './MainPage.sass'
 
 function MainPage() {
     return (
-        <div className="page_main-page">
+        <div className="flex main-page">
             <Nav />
-            main            
+            <div className="flex main-page__promo">
+
+            </div>
         </div>
     )
 }

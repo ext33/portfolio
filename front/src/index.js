@@ -3,9 +3,28 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+
+import {Provider} from 'react-redux'
+import { createStore, applyMiddleware } from 'redux';
+import rootReducer from './store/rootReducer'
+import reduxThunk from 'redux-thunk'
+
+const store = createStore(
+  rootReducer, 
+  applyMiddleware(
+    reduxThunk
+  )
+)
+
+library.add(fas)
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
