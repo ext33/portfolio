@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
 import {Provider} from 'react-redux'
 import { createStore, applyMiddleware } from 'redux';
@@ -18,7 +19,7 @@ const store = createStore(
   )
 )
 
-library.add(fas)
+library.add(fas, fab)
 
 ReactDOM.render(
   <React.StrictMode>

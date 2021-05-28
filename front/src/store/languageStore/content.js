@@ -3,6 +3,9 @@ export const en = {
         'home': 'home',
         'work': 'work',
         'about': 'about'
+    },
+    'main': {
+        'dev': 'developer'
     }
 }
 
@@ -11,5 +14,8 @@ export const ru = {
         'home': 'главная',
         'work': 'работы',
         'about': 'обо мне'
+    },
+    'main': {
+        'dev': 'разработчик'
     }
 }
