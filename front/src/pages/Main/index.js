@@ -1,13 +1,13 @@
 import React from 'react'
-import Nav from '../../components/Nav'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './MainPage.sass'
 import { connect } from 'react-redux'
+import ParticlesBg from 'particles-bg'
 
 function MainPage(props) {
     return (
-        <div className="flex main-page">
-            <Nav />
+        <div className="flex main-page animate__animated animate__fadeIn">
+            <ParticlesBg type="cobweb" /> 
             <div className="flex main-page__promo">
                 <div className="main-page__promo-title">
                     e x t 3 3
