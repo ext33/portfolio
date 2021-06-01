@@ -6,7 +6,7 @@ import ParticlesBg from 'particles-bg'
 
 function MainPage(props) {
     return (
-        <div className="flex main-page animate__animated animate__fadeIn">
+        <div className="flex page main-page animate__animated animate__fadeIn">
             <ParticlesBg type="cobweb" /> 
             <div className="flex main-page__promo">
                 <div className="main-page__promo-title">

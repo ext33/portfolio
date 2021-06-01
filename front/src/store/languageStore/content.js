@@ -6,7 +6,15 @@ export const en = {
     },
     'main': {
         'dev': 'developer'
-    }
+    },
+    'about': {
+        'title': 'About',
+        'desc': '',
+    },
+    'work': {
+        'title': 'Work',
+        'desc': '',
+    },
 }
 
 export const ru = {
@@ -17,5 +25,13 @@ export const ru = {
     },
     'main': {
         'dev': 'разработчик'
-    }
+    },
+    'about': {
+        'title': 'Обо мне',
+        'desc': '',
+    },
+    'work': {
+        'title': 'Работы',
+        'desc': '',
+    },
 }
