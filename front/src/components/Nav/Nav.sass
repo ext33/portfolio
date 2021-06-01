@@ -3,8 +3,13 @@
 .nav
     justify-content: space-between
     align-items: center
+    flex-wrap: nowrap
     padding: 60px 0
     width: 70%
+
+    &__icon-container
+        justify-content: space-between
+        flex-direction: row
 
     &__theme-icon
         width: 32px
@@ -23,9 +28,51 @@
             margin: 0 30px
     
     &__lang-btn
+        flex-direction: row
+        
+        // display: inline !important
 
         button
             cursor: pointer
+    
+    &__icon
+        display: none
         
     .focus
         border-bottom: 1px solid $black
+
+
+@media screen and (max-width: 890px) 
+    .nav
+
+        &__icon-container
+            width: 100%
+
+        &__links
+            display: none
+
+        &__icon 
+            float: right
+            display: block
+
+            svg
+                width: 31px !important
+                height: 31px !important
+        
+
+    .nav.responsive
+        flex-direction: column
+        
+        #nav__links
+            display: flex
+            text-align: center
+            justify-content: left
+            flex-direction: column
+            height: 500px
+
+            div, a
+                margin: 10px
+
+
+        
+            

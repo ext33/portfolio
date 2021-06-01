@@ -71,16 +71,29 @@ function Nav(props) {
             })
     }, [currentLocation])
 
+    function toggleNav() {
+        var x = document.getElementById("nav")
+        if (x.className === "flex nav animate__animated animate__fadeIn") 
+            x.className += " responsive"
+        else 
+            x.className = "flex nav animate__animated animate__fadeIn"
+    }
+
     return (
-        <div className="flex nav animate__animated animate__fadeIn">
-            <div className="nav__theme-icon">
-                <FontAwesomeIcon icon={["fas", "adjust"]} />
+        <div className="flex nav animate__animated animate__fadeIn" id="nav">
+            <div className="flex nav__icon-container">
+                <div className="nav__theme-icon">
+                    <FontAwesomeIcon icon={["fas", "adjust"]} />
+                </div>
+                <button className="nav__icon" onClick={() => toggleNav()}>
+                    <FontAwesomeIcon icon={["fas", "bars"]} />
+                </button>
             </div>
-            <div className="flex nav__links">
+            <div className="flex nav__links" id="nav__links">
                 <NavLink activeClassName={location.styles.home} to='/'>{props.text.nav.home}</NavLink>
                 <NavLink activeClassName={location.styles.work} to='/work'>{props.text.nav.work}</NavLink>
                 <NavLink activeClassName={location.styles.about} to='/about'>{props.text.nav.about}</NavLink>
-                <div className="nav__lang-btn">
+                <div className="flex nav__lang-btn">
                     <button className={language.enLangStyles} onClick={() => props.switchToEn()}>en</button> 
                     &nbsp; | &nbsp;
                     <button className={language.ruLangStyles} onClick={() => props.switchToRu()}>ru</button>
