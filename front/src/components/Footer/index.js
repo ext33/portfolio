@@ -1,9 +1,10 @@
 import React from 'react'
+import './Footer.sass'
 
 function Footer() {
     return (
-        <div className="flex ui_footer">
-            
+        <div className="flex footer">
+            Copyright © ext33. All rights reserved.
         </div>
     )
 }

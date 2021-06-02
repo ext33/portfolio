@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import './AboutPage.sass'
+import Footer from '../../components/Footer'
 import reactLogo from '../../assets/react-icon.svg'
 import vueLogo from '../../assets/vue-logo.svg'
 import nodeLogo from '../../assets/nodejs-icon.svg'
@@ -26,7 +27,7 @@ function AboutPage(props) {
                     </div>
                 </div>
 
-                <div className="flex about-page__stack-item">
+                <div className="flex about-page__stack-item revert">
                     <div className="about-page__stack-item-desc">
                         {props.text.about.vue}
                     </div>
@@ -44,7 +45,7 @@ function AboutPage(props) {
                     </div>
                 </div>
 
-                <div className="flex about-page__stack-item">
+                <div className="flex about-page__stack-item revert">
                     <div className="about-page__stack-item-desc">
                         {props.text.about.vsc}
                     </div>
@@ -54,6 +55,7 @@ function AboutPage(props) {
                 </div>
 
             </div>
+            <Footer />
         </div>
     )
 }
