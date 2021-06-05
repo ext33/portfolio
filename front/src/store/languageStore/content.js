@@ -18,6 +18,18 @@ export const en = {
     'work': {
         'title': 'Work',
         'desc': 'I have 3 full-fledged projects using frameworks. In my projects, I used Vue, React, Redux, Node + Express, Gulp.',
+        'items': {
+            'beautyNet': {
+                'title': 'beauty-net',
+                'desc': 'My graduation project is a web application for barbershop. The interface is developed on Vue, the server is developed on Django + Node. Docker is configured for deployment.',
+                'link': 'https://github.com/ext33/beauty-net'
+            },
+            'wsopDesign': {
+                'title': 'wsop-design',
+                'desc': 'My own simple image gallery project. The interface is developed on React + Redux + sass, the server is developed on Node + ts. Docker is configured for deployment.',
+                'link': 'https://github.com/ext33/wsop-design'
+            }
+        }
     },
 }
 
@@ -41,5 +53,17 @@ export const ru = {
     'work': {
         'title': 'Работы',
         'desc': 'Имею 3 полноценных проекта с использованием фреймворков. В своих проектах я использовал Vue, React, Redux, Node + Express, Gulp.',
+        'items': {
+            'beautyNet': {
+                'title': 'beauty-net',
+                'desc': 'Мой дипломный проект веб-приложения для барбершопа. Интерфейс разработан на Vue, сервер разработан на Django + Node. Для развертывания сконфигурирован Docker.',
+                'link': 'https://github.com/ext33/beauty-net'
+            },
+            'wsopDesign': {
+                'title': 'wsop-design',
+                'desc': 'Мой собственный проект простой галереи изображений. Интерфейс разработан на React + Redux + sass, сервер разработан на Node + ts. Для развертывания сконфигурирован Docker.',
+                'link': 'https://github.com/ext33/wsop-design'
+            }
+        }
     },
 }
