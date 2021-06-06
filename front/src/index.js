@@ -8,7 +8,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
-import {Provider} from 'react-redux'
+import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux';
 import rootReducer from './store/rootReducer'
 import reduxThunk from 'redux-thunk'
