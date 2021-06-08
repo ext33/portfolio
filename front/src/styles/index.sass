@@ -44,6 +44,10 @@ html, body
     height: 100%
     box-sizing: border-box
 
+body
+    background-color: var(--background-color)
+    color: var(--text-color)
+
 h1
     font-size: 24px
     letter-spacing: -0.02em
@@ -85,7 +89,7 @@ button
 
 a
     text-decoration: none
-    color: $black
+    color: var(--text-color)
 
 p
     line-height: 17px
@@ -106,7 +110,22 @@ hr
     align-items: center
     flex-direction: column
 
-    
+// themes styles
+html
+    --accent: #4BA1DF
+    --background-color: #F9F9F9
+    --text-color:#1F1F1F
+    --shadow: rgba(0, 0, 0, 0.3)
+    --border: rgba(0, 0, 0, 0.0)
+
+html[data-theme='dark']
+    --accent: #4BA1DF
+    --background-color: #1E2327
+    --text-color: #F9F9F9
+    --shadow: rgba(0, 0, 0, 0.0)
+    --border: #636175
+
+// adaptivity
 @media screen and (max-width: 890px) 
     .page
         padding-top: 10px

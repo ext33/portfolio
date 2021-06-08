@@ -4,6 +4,7 @@ import { NavLink, useLocation } from "react-router-dom"
 import './Nav.sass'
 import { connect } from 'react-redux'
 import { setLanguageEn, setLanguageRu } from '../../store/languageStore/languageActions'
+import { setTheme } from '../../store/themeStore/themeActions'
 
 
 function Nav(props) {
@@ -82,9 +83,9 @@ function Nav(props) {
     return (
         <div className="flex nav animate__animated animate__fadeIn" id="nav">
             <div className="flex nav__icon-container">
-                <div className="nav__theme-icon">
+                <button className="nav__theme-icon" onClick={() => props.changeTheme()}>
                     <FontAwesomeIcon icon={["fas", "adjust"]} />
-                </div>
+                </button>
                 <button className="nav__icon" onClick={() => toggleNav()}>
                     <FontAwesomeIcon icon={["fas", "bars"]} />
                 </button>
@@ -114,6 +115,7 @@ function mapDispatchToProps(dispatch){
     return {
         switchToEn: () => dispatch(setLanguageEn()),
         switchToRu: () => dispatch(setLanguageRu()),
+        changeTheme: () => dispatch(setTheme()),
     }
 }
 
