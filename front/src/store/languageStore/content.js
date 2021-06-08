@@ -17,7 +17,7 @@ export const en = {
     },
     'work': {
         'title': 'Work',
-        'desc': 'I have 3 full-fledged projects using frameworks. In my projects, I used Vue, React, Redux, Node + Express, Gulp.',
+        'desc': 'I have 2 full-fledged projects using frameworks. In my projects, I used Vue, React, Redux, Node + Express, Gulp.',
         'items': {
             'beautyNet': {
                 'title': 'beauty-net',
@@ -52,7 +52,7 @@ export const ru = {
     },
     'work': {
         'title': 'Работы',
-        'desc': 'Имею 3 полноценных проекта с использованием фреймворков. В своих проектах я использовал Vue, React, Redux, Node + Express, Gulp.',
+        'desc': 'Имею 2 полноценных проекта с использованием фреймворков. В своих проектах я использовал Vue, React, Redux, Node + Express, Gulp.',
         'items': {
             'beautyNet': {
                 'title': 'beauty-net',

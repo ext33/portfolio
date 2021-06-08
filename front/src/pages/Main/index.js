@@ -25,7 +25,8 @@ function MainPage(props) {
 
 function mapStateToProps(state) {
     return {
-        text: state.languageReducer.text
+        text: state.languageReducer.text,
+        theme: state.themeReducer.theme
     }
 }
 
